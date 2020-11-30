@@ -1,0 +1,57 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Register your Geese Prototype
+        <span class="govuk-caption-xl">{{releaseVersion}}</span>
+      </h1>{{releaseVersion | log }}
+
+      <h2 class="govuk-heading-m">What's the problem the service is trying to solve?</h2>
+
+      <p>In recent years geese have become increasingly popular and this alternative Christmas bird has proven
+        itself a versatile commodity to own. Whether its the poultry farming market, the lucrative feather market (producing high-street feather jackets,
+        luxury down duvets, ethnic jewellery and more) or the newly established 'experience' market (hipsters spending their money on goose walking days out)
+        it seems that geese are trending everywhere. Due to this increase in demand, we are seeing a rise of small scale goose farms that are not being monitored
+        for either the welfare standards of the geese or for their taxable income. Even more incidious is the emergance of a goose black market where the rarer geese
+        breeds are being trafficked illegally. By making sure large numbers of geese along with smaller numbers of geese that provide an income are registerd the
+        government hopes to get on top of these new problems.
+      </p>
+
+
+      <h2 class="govuk-heading-m">What do we already know about?</h2>
+
+      <p>Farmers with large flocks of birds for commercial purposes are already registered under agriculture laws/services run by Defra. We are concerned about large flocks
+        that are not under the defra registration schemes and/or smaller flocks that generate an income :
+      </p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          <a href="/docs/tutorials-and-examples">Small flocks kept farmers/land owners/citizens</a>
+        </li>
+        <li>
+          <a href="https://design-system.service.gov.uk">Large flocks kept by farmers/land owners/citizens, for their own use (e.g. eggs, meat, pets)</a>
+        </li>
+      </ul>
+
+      <h2 class="govuk-heading-m">Scope for the discovery/alpha</h2>
+
+      <h2 class="govuk-heading-m">Assumptions to test</h2>
+
+      <h2 class="govuk-heading-m">Prototype Iterations</h2>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          <a href="01/index">Version 1</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+{% endblock %}

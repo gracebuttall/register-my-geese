@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="01start.html">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">How many Geese do you own?</h1>
+
+      <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="how-many-geese" name="how-many-geese" type="radio" value="1-9">
+        <label class="govuk-label govuk-radios__label" for="how-many-geese">
+          1-9
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="how-many-geese-2" name="how-many-geese" type="radio" value="10-19">
+        <label class="govuk-label govuk-radios__label" for="how-many-geese-2">
+          10-19
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="how-many-geese-3" name="how-many-geese" type="radio" value="20-or-more">
+        <label class="govuk-label govuk-radios__label" for="how-many-geese-3">
+          20 or more
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="how-many-geese-4" name="how-many-geese" type="radio" value="lost-count">
+        <label class="govuk-label govuk-radios__label" for="how-many-geese-4">
+          Lost count of the buggers
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+      <form class="form" action="03-02geese-for-profit" method="post">
+
+        <p></p>
+
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
