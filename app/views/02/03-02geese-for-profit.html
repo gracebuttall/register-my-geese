@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="02how-many-geese">Back</a>
+{% endblock %}
+
+{% block content %}
+<form class="form" action="branch-geese-for-profit" method="post">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Do you profit financially from your geese?</h1>
+
+      <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="geese-for-profit" name="geese-for-profit" type="radio" value="Yes">
+        <label class="govuk-label govuk-radios__label" for="geese-for-profit">Yes</label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="geese-for-profit-2" name="geese-for-profit" type="radio" value="No">
+        <label class="govuk-label govuk-radios__label" for="geese-for-profit-2">No</label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
+
+        <p></p>
+
+
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
